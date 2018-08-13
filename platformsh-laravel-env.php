@@ -24,8 +24,8 @@ function mapPlatformShEnvironment() : void
     mapAppUrl();
 
     // Set the application secret if it's not already set.
-    $secret = getenv('APP_KEY') ?: getenv('PLATFORM_PROJECT_ENTROPY') ?: null;
-    setEnvVar('APP_KEY', $secret);
+    // $secret = getenv('APP_KEY') ?: getenv('PLATFORM_PROJECT_ENTROPY') ?: null;
+    // setEnvVar('APP_KEY', $secret);
 
     // Force secure cookies on by default, since Platform.sh is SSL-all-the-things.
     // It can be overridden explicitly.
